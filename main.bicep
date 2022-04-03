@@ -33,7 +33,7 @@ var virtualNetworkDefaultSubnetName = 'default'
 var virtualMachineImageReference = {
   publisher: 'canonical'
   offer: '0001-com-ubuntu-server-focal'
-  sku: '20_04-lts'
+  sku: '20_04-lts-gen2'
   version: 'latest'
 }
 var virtualMachineOSDiskName = '${virtualMachineName}_OsDisk_1_2a556be6f97f412ab0c85ccb97f700d5'

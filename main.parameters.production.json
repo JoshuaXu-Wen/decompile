@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "virtualMachineSizeName": {
-            "value": "Standard_D2s_v3"
+            "value": "Standard_B2s"
         },
         "virtualMachineManagedDiskStorageAccountType": {
-            "value": "Premium_LRS"
+            "value": "StandardSSD_LRS"
         },
         "virtualMachineAdminUsername": {
-            "value": "toytruckadmin"
+            "value": "manmandes"
         },
         "virtualNetworkAddressPrefix": {
             "value": "10.0.0.0/16"
