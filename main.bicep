@@ -1,11 +1,11 @@
 @description('The name of the size of the virtual machine to deploy.')
-param virtualMachineSizeName string = 'Standard_D2s_v3'
+param virtualMachineSizeName string 
 
 @description('The name of the storage account SKU to use for the virtual machine\'s managed disk.')
-param virtualMachineManagedDiskStorageAccountType string = 'Premium_LRS'
+param virtualMachineManagedDiskStorageAccountType string 
 
 @description('The administrator username for the virtual machine.')
-param virtualMachineAdminUsername string = 'toytruckadmin'
+param virtualMachineAdminUsername string 
 
 @description('The administrator password for the virtual machine.')
 @secure()
