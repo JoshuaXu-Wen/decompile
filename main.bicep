@@ -42,7 +42,7 @@ var virtualMachineOSDiskName = '${virtualMachineName}_OsDisk_1_2a556be6f97f412ab
 resource networkSecurityGroup 'Microsoft.Network/networkSecurityGroups@2020-11-01' = {
   name: networkSecurityGroupName
   location: location
-  // properties: {
+  // properties:
   //   securityRules: []
   // }
 }
@@ -148,7 +148,7 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2021-11-01' = {
   }
 }
 
-resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
+resource networkInterface 'Microsoft.Network/networkInterfaces@2020-07-01' = {
   name: networkInterfaceName
   location: location
   properties: {
@@ -156,7 +156,6 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
       {
         name: 'ipconfig1'
         properties: {
-          // privateIPAddress: '10.0.0.4'
           privateIPAllocationMethod: 'Dynamic'
           publicIPAddress: {
             id: publicIPAddress.id
@@ -172,7 +171,7 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
     // dnsSettings: {
     //   dnsServers: []
     // }
-    enableAcceleratedNetworking: false
+    enableAcceleratedNetworking: true
     enableIPForwarding: false
     networkSecurityGroup: {
       id: networkSecurityGroup.id
