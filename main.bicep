@@ -171,7 +171,7 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2020-07-01' = {
     // dnsSettings: {
     //   dnsServers: []
     // }
-    enableAcceleratedNetworking: true
+    enableAcceleratedNetworking: false
     enableIPForwarding: false
     networkSecurityGroup: {
       id: networkSecurityGroup.id
